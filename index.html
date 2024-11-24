@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajeet Kumar's Coding Profiles</title>
+    <style>
+        /* General styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .logo img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        transition: transform 0.3s ease; /* Smooth hover effect */
+    }
+
+    .logo img:hover {
+        transform: scale(1.1); /* Slight zoom effect on hover */
+    }
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background: #2C3E50; /* Dark background */
+            color: #ECF0F1; /* Light text */
+            text-align: center;
+        }
+        header {
+            padding: 2rem;
+            background: #34495E; /* Slightly lighter dark background */
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: #1ABC9C; /* Teal accent */
+        }
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            color: #BDC3C7; /* Soft gray for subheading */
+        }
+
+        /* Profile image */
+        .profile-image {
+            margin: 2rem auto;
+        }
+        .profile-image img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #1ABC9C; /* Teal border */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Links section */
+        .links-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 2rem auto;
+            width: 90%;
+            max-width: 900px;
+        }
+        .link-item {
+            flex: 1 1 calc(45% - 1rem);
+            margin: 0.5rem;
+            background: #34495E; /* Consistent dark tone */
+            color: #ECF0F1;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+        .link-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.6);
+            background: #3D566E; /* Slightly brighter on hover */
+        }
+        .link-item a {
+            display: block;
+            padding: 1.5rem;
+            text-decoration: none; /* No underline */
+            color: #1ABC9C; /* Teal links */
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+        .link-item a img {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 0.5rem;
+        }
+        .link-item a:hover {
+            text-decoration: none; /* Ensure underline doesn't appear on hover */
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 3rem;
+            padding: 1rem;
+            font-size: 0.9rem;
+            opacity: 0.8;
+            color: #BDC3C7; /* Soft gray */
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem; /* Smaller title on mobile */
+            }
+            header p {
+                font-size: 1rem; /* Smaller subtitle on mobile */
+            }
+            .profile-image img {
+                width: 120px; /* Smaller profile image */
+                height: 120px;
+            }
+            .link-item {
+                flex: 1 1 calc(100% - 1rem); /* Full width on mobile */
+                margin: 0.5rem 0; /* Vertical margin for better spacing */
+            }
+            .link-item a {
+                font-size: 1rem; /* Smaller font size for links */
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.6rem; /* Even smaller title on very small screens */
+            }
+            header p {
+                font-size: 0.9rem; /* Even smaller subtitle */
+            }
+            .link-item a {
+                font-size: 0.9rem; /* Adjusting font size for better readability */
+                padding: 1rem; /* Reduced padding */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ajeet Kumar</h1>
+        <p>Problem Solver | Python/Django Developer | Coding Enthusiast</p>
+    </header>
+
+    <div class="profile-image">
+        <img src="images/profileImage.jpg" alt="Ajeet Kumar">
+    </div>
+
+    <div class="links-container">
+        <div class="link-item">
+            <a href="https://leetcode.com/u/Ajeet278/" target="_blank">
+                <img src="images/leetcode.png" alt="LeetCode">
+                LeetCode 
+            </a>
+        </div>
+        <div class="link-item">
+            <a href="https://www.hackerrank.com/profile/ajeetkumar36698" target="_blank">
+                <img src="images/hackerrank.png" alt="HackerRank">
+                HackerRank 
+            </a>
+        </div>
+        <div class="link-item">
+            <a href="https://www.geeksforgeeks.org/your-profile" target="_blank">
+                <img src="images/gfg.png" alt="GeeksforGeeks">
+                GeeksforGeeks 
+            </a>
+        </div>
+        <div class="link-item">
+            <a href="https://www.naukri.com/code360/profile/a6580f4b-02a2-4d3a-a27c-ee3c78d851d1" target="_blank">
+                <img src="images/codingninjas.png" alt="Coding Ninjas">
+                Coding Ninjas 
+            </a>
+        </div>
+        <div class="link-item">
+            <a href="https://www.interviewbit.com/profile/ajeet-kumar_943" target="_blank">
+                <img src="images/interviewbit.png" alt="InterviewBit" width="40" height="40">
+                InterviewBit 
+            </a>
+        </div>
+        
+        <div class="link-item">
+            <a href="https://github.com/ajeetkumar36698" target="_blank">
+                <img src="images/github.png" alt="GitHub">
+                GitHub 
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        © 2024 Ajeet Kumar. All rights reserved.
+    </footer>
+</body>
+</html>
